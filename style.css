@@ -156,7 +156,7 @@ body {
 .bottom {
     display: flex;
     justify-content: space-between;
-    gap: 90px;
+    gap: 125px;
     width: 820px;
     margin-left: -30px;
 }
