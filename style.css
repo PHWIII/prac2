@@ -165,17 +165,51 @@ body {
     width: 500px;
 }
 
-/* ---- Bottom-left block: intro row (text + circle-menu/circle) ---- */
+/* ---- Bottom-left block: верхняя строка (лого + меню) ---- */
+
+.bottom__left .bottom__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.bottom__left .bottom__top .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* полоска из 4 прямоугольников в левом нижнем блоке */
+.bottom__left .bottom__top::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 25px;
+    background: linear-gradient(
+        to right,
+        black 0 25%,
+        white 25% 28%,
+        black 28% 53%,
+        white 53% 56%,
+        black 56% 81%,
+        white 81% 84%,
+        black 84% 100%
+    );
+}
+
+/* ---- Bottom-left block: intro row (text + circle) ---- */
 
 .bottom__intro {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end; /* выравнивание по низу круга */
     margin-top: 30px;
 }
 
 .bottom__text {
     width: 250px;
+    padding-bottom: 0; /* текст прижат к нижней линии круга */
 }
 
 .bottom__circle-area {
