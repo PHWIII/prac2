@@ -165,8 +165,6 @@ body {
     width: 500px;
 }
 
-/* ---- Bottom-left block: верхняя строка (лого + меню) ---- */
-
 .bottom__left .bottom__top {
     display: flex;
     justify-content: space-between;
@@ -180,7 +178,6 @@ body {
     gap: 10px;
 }
 
-/* полоска из 4 прямоугольников в левом нижнем блоке */
 .bottom__left .bottom__top::after {
     content: "";
     display: block;
@@ -198,38 +195,27 @@ body {
     );
 }
 
-/* ---- Bottom-left block: intro row (text + circle) ---- */
-
 .bottom__intro {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* выравнивание по низу круга */
+    align-items: flex-end;
     margin-top: 30px;
 }
 
 .bottom__text {
     width: 250px;
-    padding-bottom: 0; /* текст прижат к нижней линии круга */
+    padding-bottom: 0;
 }
 
 .bottom__circle-area {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 15px;
+    gap: 0;
 }
 
 .bottom__circle-menu {
-    display: flex;
-    width: 230px;
-    height: 25px;
-}
-
-.bottom__circle-menu span {
-    width: 25%;
-    height: 25px;
-    background: black;
-    border-right: 3px solid white;
+    display: none;
 }
 
 .shape--circle-small {
@@ -237,8 +223,6 @@ body {
     height: 180px;
     border-radius: 50%;
 }
-
-/* ---- Bottom-left block: three rectangles row ---- */
 
 .bottom__rectangles {
     display: flex;
@@ -251,8 +235,6 @@ body {
     width: 100%;
     height: 85px;
 }
-
-/* ---- Bottom-left block: two-column card lists ---- */
 
 .bottom__lists {
     display: flex;
@@ -292,8 +274,6 @@ body {
 .bottom-card .text {
     font-size: 9px;
 }
-
-/* ---- Bottom-right block ---- */
 
 .bottom__right {
     width: 270px;
