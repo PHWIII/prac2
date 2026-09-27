@@ -156,7 +156,7 @@ body {
 .bottom {
     display: flex;
     justify-content: space-between;
-    gap: 55px;
+    gap: 90px;
     width: 820px;
     margin-left: -30px;
 }
@@ -181,17 +181,17 @@ body {
 .bottom__left .bottom__top::after {
     content: "";
     display: block;
-    width: 230px;
+    width: 240px;
     height: 25px;
     background: linear-gradient(
         to right,
-        black 0 25%,
-        white 25% 28%,
-        black 28% 53%,
-        white 53% 56%,
-        black 56% 81%,
-        white 81% 84%,
-        black 84% 100%
+        black 0 23%,
+        white 23% 25%,
+        black 25% 48%,
+        white 48% 50%,
+        black 50% 73%,
+        white 73% 75%,
+        black 75% 100%
     );
 }
 
@@ -227,12 +227,12 @@ body {
 .bottom__rectangles {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 8px;
     margin-top: 30px;
 }
 
 .shape--bottom-rectangle {
-    width: 100%;
+    flex: 1;
     height: 85px;
 }
 
